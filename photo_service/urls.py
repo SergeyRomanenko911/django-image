@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from photo_app.views import user_page
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', user_page),
+
 ]
